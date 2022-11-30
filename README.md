@@ -3,7 +3,7 @@ This Project shows the ability of controlling on  elements based on the screens 
 
 <h1>Responsive Page Using Front-End Languages.</h1>
 <ul>
-<li>Contains animations when scrolling.</li>
+<li>Contains nabar size change</li>
 <li>It has three color designs (blue, red and yellow)</li>
 <li>Developed first with the Mobile First methodology, then for desktop.</li>
 <li>Compatible with all mobile devices .</li>
@@ -17,5 +17,5 @@ This Project shows the ability of controlling on  elements based on the screens 
 <br>
 <br>
 <br>
-<img src='photo3.png'>
+<img src='Photo3.png'>
 

@@ -1,0 +1,220 @@
+/* css stylesheet for demo */
+
+@charset "utf-8";
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+  
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+	font-size:100%;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;	 
+}
+
+p{
+	margin:15px 0px;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	/* min-width: 480px;
+	max-width: 960px; */
+}
+/* For Mobile device */
+@media only screen and (max-width:480px ){
+	body{
+		background-color:yellow;
+	}
+	a#navicon{
+		display: block, i !important;;
+	}
+	nav ul.nav_menu{
+		display:none;
+	}
+	a#navicon:hover+ul , nav ul.nav_menu:hover{
+		display: block !important;;
+	}
+    body nav ul.nav_menu  > li{
+		float:none !important;
+		width: 100% !important;
+	}
+	article#main{
+		width: 100% !important;
+		padding:15px 15px 15px 0px;
+		float:none !important;
+	}
+	article#main img{
+		width: 100% !important;
+		margin: 10px;
+	}
+	/* article#reviews{
+		float: none !important;;
+		width:100% !important;
+		margin: 10px;
+		padding:15px 15px 15px 0px ;
+		border-top: 2px solid black;
+		border-left:none!important;
+	} */
+	article#examples{
+		float:none !important;
+		width:100% !important;
+		margin: 10px;
+		padding:15px 15px 15px 0px ;
+		border-top:4px solid blue !important;
+		border-left:none !important;
+	}
+	article#examples img{
+		width: 100% !important;
+		margin: 10px;
+	}
+	h1{
+		font-size:2em;
+	}
+}
+/* for Table device */
+@media only screen  and (min-width:481px )and (max-width:768px) {
+	body{
+		background-color: blue;
+	}
+	a#navicon{
+		display:none !important;
+	}
+	article#examples {
+	clear:both;
+	float:none!important;
+	width:100%!important;
+	margin-top: 10px;
+	padding:15px 15px 15px 0px ;
+	border-top: 2px solid black;
+	border-left: none !important;
+	}
+	article#main{
+		
+		width: 100% !important;
+		padding:15px 15px 15px 0px;
+		float:none !important;
+	}
+	article#main img{
+		width: 50% !important;
+		margin: 10px;
+	}
+	/* article#reviews{
+		float: none !important;;
+		width:100% !important;
+		margin: 10px;
+		padding:15px 15px 15px 0px ;
+		border-top: 2px solid black;
+		border-left:none!important;
+	} */
+	article#examples img{
+		width: 50% !important;
+		margin: 10px;
+	}
+}
+/* for desktop screen */
+@media screen and (min-width:769px){
+	 
+	body{
+		background-color: red;
+	}
+	a#navicon{
+		display:none !important;
+	}
+}
+h1{
+	width:100%;
+	background-color:yellow;
+	text-align:center;
+	font-size:3em;
+}
+header img{
+	width:100%;
+}
+nav ul.nav_menu {
+	list-style:none;
+}
+nav ul.nav_menu li a{
+	text-decoration: none;
+}
+body nav{
+	width:100%;
+}
+
+nav li {
+  display: block;
+}
+nav a {
+   display: block;
+   font-size: 1em;
+}
+body nav ul.nav_menu  > li{
+	width: 25%;	
+	border-style: solid;
+	border-width: 1px;
+	display:block;
+	float: left;
+	/*border-style:solid;*/
+	text-align:center; 
+	padding:10px 5px; 
+	background-color:khaki;
+}
+a {
+  color: black;
+}
+body nav ul.nav_menu li.active{
+	background-color: lightblue;
+	font-weight: bold;
+}	
+article#main {
+	float:left;
+	width:50%;
+	padding:15px 15px 15px 0px;
+}
+article#main img{
+	width: 50%;
+	float:left;
+	/* border-style:solid; */
+}
+article#examples{
+	float:left;
+	width:30%;
+	margin-top: 10px;
+	padding:5px 0px 15px 15px ;
+	border-left: 2px solid black;
+}
+article#reviews{
+	float:left;
+	width:20%;
+	margin-top: 10px;
+	padding:5px 0px 15px 15px ;
+	border-left: 2px solid black;
+}
+article#reviews h3{
+	
+	text-align:center;
+	background-color: silver;
+}
+article#examples img{
+	width: 70%;
+	float:right;
+	margin: 10px;
+	/* border-style:solid; */
+}
+article#main h3{
+	text-align:center;
+	background-color: lightblue;
+}
+article#examples h3{
+	text-align:center;
+	background-color: lightgreen;
+}
+footer{
+	text-align:center;
+	clear:left;
+}
